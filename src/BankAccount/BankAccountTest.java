@@ -45,6 +45,7 @@ public class BankAccountTest {
     public void withDraw_Nobranch() {
         double balance = bankAccountChecking.withDraw(600, false );
         assertEquals(400.00, balance, 0);
+        fail("Expected the IllegalArgumentException");
     }
 
     @Test
